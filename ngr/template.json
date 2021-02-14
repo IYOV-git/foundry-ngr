@@ -1,50 +1,49 @@
 {
-    "Actor": {
-      "types": ["character"],
-      "templates": {
-      },
-      "character": {
-        "templates": [],
-        "attributes": {
-            "str":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "agi":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "hth":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "per":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "int":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "cha":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            },
-            "wil":{
-                "score": 10,
-                "modifier": 0,
-                "die": "1d6"
-            }
+  "Actor": {
+    "types": ["character"],
+    "templates": {},
+    "character": {
+      "templates": [],
+      "attributes": {
+        "str":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "agi":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "hth":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "per":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "int":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "cha":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
+        },
+        "wil":{
+          "score": 10,
+          "modifier": 0,
+          "die": "1d6"
         }
       }
-    },
-    "Item": {
-      "types": []
     }
+  },
+  "Item": {
+    "types": []
+  }
 }
