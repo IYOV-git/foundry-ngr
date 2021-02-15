@@ -1,2 +1,16 @@
 { 
+  "NGR.attributes.str.long": "Strength",
+  "NGR.attributes.str.short": "STR",
+  "NGR.attributes.agi.long": "Agility",
+  "NGR.attributes.agi.short": "AGI",
+  "NGR.attributes.hth.long": "Health",
+  "NGR.attributes.hth.short": "HTH",
+  "NGR.attributes.per.long": "Perception",
+  "NGR.attributes.per.short": "PER",
+  "NGR.attributes.int.long": "Intelligence",
+  "NGR.attributes.int.short": "INT",
+  "NGR.attributes.cha.long": "Charisma",
+  "NGR.attributes.cha.short": "CHA",
+  "NGR.attributes.wil.long": "Will",
+  "NGR.attributes.wil.short": "WIL"
 }
