@@ -1,6 +1,9 @@
 import { NGRCharacterSheet } from "./sheets/character-sheet.js";
+import { NGRActor } from "./actor.js";
 
 Hooks.once("init", async function () {
+
+  CONFIG.Actor.entityClass = NGRActor;
   
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);

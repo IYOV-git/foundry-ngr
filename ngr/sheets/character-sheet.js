@@ -12,4 +12,7 @@ export class NGRCharacterSheet extends ActorSheet {
       resizable: true,
     });
   }
+  activateListeners(html) {
+    super.activateListeners(html);
+  }
 }
