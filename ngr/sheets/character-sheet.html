@@ -1,65 +1,58 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <section class="attributes-tab flexrow">
-        {{!-- attributes --}}
-        <div class="attribute-group">
-            <ul class="attributes">
-                <li class="attribute-score" data-score="str">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.str.long' }}">
-                        <a>{{ localize "NGR.attributes.str.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.str.score" type="text" value="{{data.attributes.str.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="agi">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.agi.long' }}">
-                        <a>{{ localize "NGR.attributes.agi.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.agi.score" type="text" value="{{data.attributes.agi.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="hth">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.hth.long' }}">
-                        <a>{{ localize "NGR.attributes.hth.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.hth.score" type="text" value="{{data.attributes.hth.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="per">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.per.long' }}">
-                        <a>{{ localize "NGR.attributes.per.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.per.score" type="text" value="{{data.attributes.per.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="int">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.int.long' }}">
-                        <a>{{ localize "NGR.attributes.int.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.int.score" type="text" value="{{data.attributes.agi.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="cha">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.cha.long' }}">
-                        <a>{{ localize "NGR.attributes.cha.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.cha.score" type="text" value="{{data.attributes.cha.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-                <li class="attribute-score" data-score="wil">
-                    <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.wil.long' }}">
-                        <a>{{ localize "NGR.attributes.wil.short" }}</a></h4>
-                    <div class="attribute-score">
-                        <input name="data.attributes.wil.score" type="text" value="{{data.attributes.wil.score}}" placeholder="0"
-                            data-dtype="Number" />
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <section class="attributes-tab flexrow">
+    {{!-- attributes --}}
+    <div class="attribute-group">
+      <ul class="attributes">
+        <li class="attribute-score" data-score="str">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.str.long' }}">
+            <a>{{ localize "NGR.attributes.str.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.str.score" type="text" value="{{data.attributes.str.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="agi">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.agi.long' }}">
+            <a>{{ localize "NGR.attributes.agi.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.agi.score" type="text" value="{{data.attributes.agi.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="hth">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.hth.long' }}">
+            <a>{{ localize "NGR.attributes.hth.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.hth.score" type="text" value="{{data.attributes.hth.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="per">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.per.long' }}">
+            <a>{{ localize "NGR.attributes.per.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.per.score" type="text" value="{{data.attributes.per.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="int">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.int.long' }}">
+            <a>{{ localize "NGR.attributes.int.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.int.score" type="text" value="{{data.attributes.agi.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="cha">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.cha.long' }}">
+            <a>{{ localize "NGR.attributes.cha.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.cha.score" type="text" value="{{data.attributes.cha.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+        <li class="attribute-score" data-score="wil">
+          <h4 class="attribute-name box-title" title="{{ localize 'NGR.attributes.wil.long' }}">
+            <a>{{ localize "NGR.attributes.wil.short" }}</a></h4>
+          <div class="attribute-score">
+            <input name="data.attributes.wil.score" type="text" value="{{data.attributes.wil.score}}" placeholder="0" data-dtype="Number" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </form>
