@@ -1,4 +1,4 @@
-export class NGRActor extends Actor {
+export class ActorNGR extends Actor {
 
   prepareData() {
     super.prepareData();

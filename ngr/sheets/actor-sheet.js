@@ -1,4 +1,4 @@
-export class NGRCharacterSheet extends ActorSheet {
+export class ActorSheetNGR extends ActorSheet {
   constructor(...args) {
     super(...args);
   }
@@ -6,7 +6,7 @@ export class NGRCharacterSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["ngr", "sheet", "actor", "character"],
-      template: "systems/ngr/sheets/character-sheet.html",
+      template: "systems/ngr/sheets/actor-sheet.html",
       height: 530,
       width: 450,
       resizable: true,
