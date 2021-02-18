@@ -1,8 +1,10 @@
+import { NGR } from "./config.js";
 import { ActorSheetNGR } from "./sheets/actor-sheet.js";
 import { ActorNGR } from "./actor.js";
 
 Hooks.once("init", async function () {
 
+  CONFIG.NGR = NGR;
   CONFIG.Actor.entityClass = ActorNGR;
   
   // Register sheet application classes
