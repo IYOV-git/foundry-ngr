@@ -1,7 +1,7 @@
 { 
   "NGR.AttributeStr": "Strength",
   "NGR.AttributeAgi": "Agility",
-  "NGR.AttributeHlt": "Health",
+  "NGR.AttributeHth": "Health",
   "NGR.AttributePer": "Perception",
   "NGR.AttributeInt": "Intelligence",
   "NGR.AttributeCha": "Charisma",
@@ -9,7 +9,7 @@
 
   "NGR.AttributeStrAbbr": "str",
   "NGR.AttributeAgiAbbr": "agi",
-  "NGR.AttributeHltAbbr": "hth",
+  "NGR.AttributeHthAbbr": "hlt",
   "NGR.AttributePerAbbr": "per",
   "NGR.AttributeIntAbbr": "int",
   "NGR.AttributeChaAbbr": "cha",

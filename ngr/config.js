@@ -3,7 +3,7 @@ export const NGR = {};
 NGR.attributes = {
   "str": "NGR.AttributeStr",
   "agi": "NGR.AttributeAgi",
-  "hlt": "NGR.AttributeHlt",
+  "hth": "NGR.AttributeHth",
   "per": "NGR.AttributePer",
   "int": "NGR.AttributeInt",  
   "cha": "NGR.AttributeCha",
@@ -12,8 +12,8 @@ NGR.attributes = {
 
 NGR.attributeAbbreviations = {
   "str": "NGR.AttributeStrAbbr",
-  "Agi": "NGR.AttributeAgiAbbr",
-  "con": "NGR.AttributeConAbbr",
+  "agi": "NGR.AttributeAgiAbbr",
+  "hth": "NGR.AttributeHthAbbr",
   "per": "NGR.AttributePerAbbr",
   "int": "NGR.AttributeIntAbbr",
   "cha": "NGR.AttributeChaAbbr",
