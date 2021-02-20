@@ -1,5 +1,3 @@
-import { NGR } from "../config.js";
-
 export class ActorSheetNGR extends ActorSheet {
   constructor(...args) {
     super(...args);
@@ -14,40 +12,70 @@ export class ActorSheetNGR extends ActorSheet {
       resizable: true,
     });
   }
+
   getData() {
-    // Basic data
     let isOwner = this.entity.owner;
     const data = {
       owner: isOwner,
-      limited: this.entity.limited,
       options: this.options,
       editable: this.isEditable,
       cssClass: isOwner ? "editable" : "locked",
-      isCharacter: this.entity.data.type === "character",
-      isNPC: this.entity.data.type === "npc",
-      isVehicle: this.entity.data.type === "vehicle",
       config: CONFIG.NGR,
     };
 
-    // The Actor and its Items
     data.actor = duplicate(this.actor.data);
-    data.items = this.actor.items.map((i) => {
-      i.data.labels = i.labels;
-      return i.data;
-    });
-    data.items.sort((a, b) => (a.sort || 0) - (b.sort || 0));
     data.data = data.actor.data;
     data.labels = this.actor.labels || {};
-    data.filters = this._filters;
 
-    // Ability Scores
-    for (let [a, abl] of Object.entries(data.actor.data.attributes)) {
-      abl.label = CONFIG.NGR.attributes[a];
+    for (let [a, att] of Object.entries(data.actor.data.attributes)) {
+      att.label = CONFIG.NGR.attributes[a];
+      const x = this._getAttModAndDie(att.score);
+      att.mod = x.mod;
+      att.die = x.die;
     }
 
     return data;
   }
+
   activateListeners(html) {
     super.activateListeners(html);
+  }
+
+  _getAttModAndDie(score) {
+    switch (score) {
+      case 1:
+        return { mod: -3, die: "1d4" };
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        return { mod: -2, die: "1d4" };
+      case 6:
+        return { mod: -1, die: "1d4" };
+      case 7:
+      case 8:
+      case 9:
+        return { mod: -1, die: "1d6" };
+      case 10:
+      case 11:
+        return { mod: 0, die: "1d6" };
+      case 12:
+      case 13:
+      case 14:
+      case 15:
+        return { mod: 1, die: "1d8" };
+      case 16:
+      case 17:
+      case 18:
+        return { mod: 2, die: "1d10" };
+      case 19:
+        return { mod: 2, die: "1d12" };
+      case 20:
+        return { mod: 3, die: "1d12" };
+      case 30:
+        return { mod: 7, die: "1d20" };
+      default:
+        return { mod: undefined, die: undefined };
+    }
   }
 }

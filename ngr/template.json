@@ -7,40 +7,68 @@
       "attributes": {
         "str": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "agi": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "hth": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "per": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "int": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "cha": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         },
         "wil": {
           "score": 10,
-          "modifier": 0,
+          "mod": 0,
           "die": "1d6"
         }
-      }
+      },
+      "classes": {
+        "warrior": {
+          "pies": 0,
+          "powers": 0
+        },
+        "bard": {
+          "pies": 0,
+          "powers": 0
+        },
+        "rogue": {
+          "pies": 0,
+          "powers": 0
+        },
+        "priest": {
+          "pies": 0,
+          "powers": 0
+        },
+        "wizard": {
+          "pies": 0,
+          "powers": 0
+        },
+        "fool": {
+          "pies": 0,
+          "powers": 0
+        }
+      },
+      "xp": 0,
+      "level": 0
     }
   },
   "Item": {

@@ -1,14 +1,14 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
-  <section class="attributes-tab flexrow">
+  <section class="attribute-tab flexrow">
     {{!-- attributes --}}
     <div class="attribute-group">
       <ul class="attribute-scores flexrow">
         {{#each data.attributes as |attributes id|}}
-          <li class="attributes" data-attribute="{{id}}">
+          <li class="attribute" data-attribute="{{id}}">
             <h4 class="attribute-name box-title rollable">{{attributes.label}}</h4>
             <input class="attribute-score" name="data.attributes.{{id}}.score" type="number" value="{{attributes.score}}" placeholder="10"/>
             <div class="attribute-modifiers flexrow">
-              <span class="attribute-mod" title="Modifier">{{attributes.modifier}}</span>
+              <span class="attribute-mod" title="Modifier">{{attributes.mod}}</span>
               <span class="attribute-die" title="Die">{{attributes.die}}</span>
             </div>
           </li>
