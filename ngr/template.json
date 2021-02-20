@@ -5,37 +5,37 @@
     "character": {
       "templates": [],
       "attributes": {
-        "str":{
+        "str": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "agi":{
+        "agi": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "hth":{
+        "hth": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "per":{
+        "per": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "int":{
+        "int": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "cha":{
+        "cha": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"
         },
-        "wil":{
+        "wil": {
           "score": 10,
           "modifier": 0,
           "die": "1d6"

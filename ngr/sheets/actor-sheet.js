@@ -15,7 +15,6 @@ export class ActorSheetNGR extends ActorSheet {
     });
   }
   getData() {
-
     // Basic data
     let isOwner = this.entity.owner;
     const data = {
@@ -26,13 +25,13 @@ export class ActorSheetNGR extends ActorSheet {
       cssClass: isOwner ? "editable" : "locked",
       isCharacter: this.entity.data.type === "character",
       isNPC: this.entity.data.type === "npc",
-      isVehicle: this.entity.data.type === 'vehicle',
+      isVehicle: this.entity.data.type === "vehicle",
       config: CONFIG.NGR,
     };
-    
+
     // The Actor and its Items
     data.actor = duplicate(this.actor.data);
-    data.items = this.actor.items.map(i => {
+    data.items = this.actor.items.map((i) => {
       i.data.labels = i.labels;
       return i.data;
     });
@@ -42,11 +41,11 @@ export class ActorSheetNGR extends ActorSheet {
     data.filters = this._filters;
 
     // Ability Scores
-    for ( let [a, abl] of Object.entries(data.actor.data.attributes)) {
+    for (let [a, abl] of Object.entries(data.actor.data.attributes)) {
       abl.label = CONFIG.NGR.attributes[a];
     }
 
-    return data
+    return data;
   }
   activateListeners(html) {
     super.activateListeners(html);
