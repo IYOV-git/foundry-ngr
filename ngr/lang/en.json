@@ -13,5 +13,12 @@
   "NGR.AttributePerAbbr": "per",
   "NGR.AttributeIntAbbr": "int",
   "NGR.AttributeChaAbbr": "cha",
-  "NGR.AttributeWilAbbr": "wil"
+  "NGR.AttributeWilAbbr": "wil",
+
+  "NGR.ClassPieWar": "Warrior",
+  "NGR.ClassPieBar": "Bard",
+  "NGR.ClassPieRog": "Rogue",
+  "NGR.ClassPiePri": "Priest",
+  "NGR.ClassPieWiz": "Wizard",
+  "NGR.ClassPieFoo": "Fool"
 }

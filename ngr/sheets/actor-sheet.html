@@ -6,10 +6,27 @@
         {{#each data.attributes as |attributes id|}}
           <li class="attribute" data-attribute="{{id}}">
             <h4 class="attribute-name box-title rollable">{{attributes.label}}</h4>
-            <input class="attribute-score" name="data.attributes.{{id}}.score" type="number" value="{{attributes.score}}" placeholder="10"/>
+            <input class="attribute-score" name="data.attributes.{{id}}.score" type="number" value="{{attributes.score}}" placeholder="NaN"/>
             <div class="attribute-modifiers flexrow">
               <span class="attribute-mod" title="Modifier">{{attributes.mod}}</span>
               <span class="attribute-die" title="Die">{{attributes.die}}</span>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+  <section class="classpie-tab flexrow">
+    {{!-- classPie --}}
+    <div class="classpie-group">
+      <ul class="classpie-pieces flexrow">
+        {{#each data.classPie as |classPie id|}}
+          <li class="classpie" data-classpie="{{id}}">
+            <h4 class="classpie-name box-title">{{classPie.label}}</h4>
+            <input class="classpie-piece" name="data.classPie.{{id}}.pieces" type="number" value="{{classPie.pieces}}" placeholder="NaN"/>
+            <div class="classpie-powers flexrow">
+              <span class="classpie-mod" title="Modifier">{{classPie.mod}}</span>
+              <span class="classpie-power" title="Powers">{{classPie.powers}}</span>
             </div>
           </li>
         {{/each}}

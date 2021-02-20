@@ -19,3 +19,12 @@ NGR.attributeAbbreviations = {
   cha: "NGR.AttributeChaAbbr",
   wil: "NGR.AttributeWilAbbr",
 };
+
+NGR.classPie = {
+  war: "NGR.ClassPieWar",
+  bar: "NGR.ClassPieBar",
+  rog: "NGR.ClassPieRog",
+  pri: "NGR.ClassPiePri",
+  wiz: "NGR.ClassPieWiz",
+  foo: "NGR.ClassPieFoo",
+};

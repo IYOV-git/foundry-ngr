@@ -34,6 +34,10 @@ export class ActorSheetNGR extends ActorSheet {
       att.die = x.die;
     }
 
+    for (let [c, p] of Object.entries(data.actor.data.classPie)) {
+      p.label = CONFIG.NGR.classPie[c];
+    }
+
     return data;
   }
 

@@ -41,34 +41,42 @@
           "die": "1d6"
         }
       },
-      "classes": {
-        "warrior": {
-          "pies": 0,
+
+      "classPie": {
+        "war": {
+          "pieces": 0,
+          "mod": 0,
           "powers": 0
         },
-        "bard": {
-          "pies": 0,
+        "bar": {
+          "pieces": 0,
+          "mod": 0,
           "powers": 0
         },
-        "rogue": {
-          "pies": 0,
+        "rog": {
+          "pieces": 0,
+          "mod": 0,
           "powers": 0
         },
-        "priest": {
-          "pies": 0,
+        "pri": {
+          "pieces": 0,
+          "mod": 0,
           "powers": 0
         },
-        "wizard": {
-          "pies": 0,
+        "wiz": {
+          "pieces": 0,
+          "mod": 0,
           "powers": 0
         },
-        "fool": {
-          "pies": 0,
+        "foo": {
+          "pieces": 3,
+          "mod": 6,
           "powers": 0
         }
       },
       "xp": 0,
-      "level": 0
+      "level": 0,
+      "luckDie": "1d6"
     }
   },
   "Item": {
