@@ -48,7 +48,8 @@
           "pieces": 3
         }
       },
-      "xp": 0
+      "xp": 0,
+      "status": "calm"
     }
   },
   "Item": {

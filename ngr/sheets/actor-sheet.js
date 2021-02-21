@@ -1,3 +1,5 @@
+import * as Dice from "../dice.js";
+
 export class ActorSheetNGR extends ActorSheet {
   constructor(...args) {
     super(...args);
@@ -28,6 +30,27 @@ export class ActorSheetNGR extends ActorSheet {
   }
 
   activateListeners(html) {
+    if (this.actor.owner) {
+      html.find(".attribute-roll").click((e) => this._onAttributeCheck(e));
+      html.find(".att-mod-roll").click((e) => this._onAttributeCheck(e));
+      html.find(".att-die-roll").click((e) => this._onAttributeRoll(e));
+    }
+
     super.activateListeners(html);
+  }
+
+  _onAttributeCheck(event) {
+    event.preventDefault();
+    const att = event.currentTarget.dataset.attribute;
+    const attMod = this.actor.data.data.attributes[att].mod;
+    const status = this.actor.data.data.status;
+    Dice.attributeCheck(attMod, status);
+  }
+
+  _onAttributeRoll(event) {
+    event.preventDefault();
+    const att = event.currentTarget.dataset.attribute;
+    const attDie = this.actor.data.data.attributes[att].die;
+    Dice.attributeRoll(attDie);
   }
 }

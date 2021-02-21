@@ -4,12 +4,12 @@
     <div class="attribute-group">
       <ul class="attribute-scores flexrow">
         {{#each data.attributes as |attributes id|}}
-          <li class="attribute" data-attribute="{{id}}">
-            <h4 class="attribute-name box-title rollable">{{attributes.label}}</h4>
+          <li class="attribute">
+            <h4 class="attribute-name box-title rollable"><a class="attribute-roll" data-attribute="{{id}}">{{attributes.label}}</a></h4>
             <input class="attribute-score" name="data.attributes.{{id}}.score" type="number" value="{{attributes.score}}" placeholder="NaN"/>
             <div class="attribute-modifiers flexrow">
-              <span class="attribute-mod" title="Modifier">{{attributes.mod}}</span>
-              <span class="attribute-die" title="Die">{{attributes.die}}</span>
+              <span class="attribute-mod" title="Modifier"><a class="att-mod-roll" data-attribute="{{id}}">{{attributes.mod}}</a></span>
+              <span class="attribute-die" title="Die"><a class="att-die-roll" data-attribute="{{id}}">{{attributes.die}}</a></span>
             </div>
           </li>
         {{/each}}
@@ -42,6 +42,20 @@
         <div class="xp-level flexrow">
           <span class="xp-level" title="Level">{{data.level}}</span>
         </div>
+      </div>
+    </div>
+  </section>
+    <section class="status-tab flexrow">
+    {{!-- status --}}
+    <div class="status-group flexrow">
+      <div class="status">
+        <select name="data.status">
+          {{#select data.status}}
+          <option value="calm">Calm</option>
+          <option value="onEdge">On Edge</option>
+          <option value="reckless">Reckless</option>
+          {{/select}}
+        </select>
       </div>
     </div>
   </section>
