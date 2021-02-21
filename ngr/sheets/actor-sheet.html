@@ -33,39 +33,19 @@
       </ul>
     </div>
   </section>
-  <section class="ConflictStats-tab flexrow">
-    {{!-- ConflictStats --}}
-    <div class="ConflictStats-group">
-      <div class="ConflictStats-combat flexrow">
-        <h4 class="ConflictStats-name box-title">{{ localize "NGR.combat" }}</h4>
-          <div class="ConflictStats-mod flexrow">
-            <span class="ConflictStats-mod" title="Modifier">{{data.combat}}</span>
-          </div>
-      </div>
-      <div class="ConflictStats-presence flexrow">
-        <h4 class="ConflictStats-name box-title">{{ localize "NGR.presence" }}</h4>
-          <div class="ConflictStats-mod flexrow">
-            <span class="ConflictStats-mod" title="Modifier">{{data.presence}}</span>
-          </div>
-      </div>
-            <div class="ConflictStats-stealth flexrow">
-        <h4 class="ConflictStats-name box-title">{{ localize "NGR.stealth" }}</h4>
-          <div class="ConflictStats-mod flexrow">
-            <span class="ConflictStats-mod" title="Modifier">{{data.stealth}}</span>
-          </div>
-      </div>
-            <div class="ConflictStats-occult flexrow">
-        <h4 class="ConflictStats-name box-title">{{ localize "NGR.occult" }}</h4>
-          <div class="ConflictStats-mod flexrow">
-            <span class="ConflictStats-mod" title="Modifier">{{data.occult}}</span>
-          </div>
-      </div>
-            <div class="ConflictStats-faith flexrow">
-        <h4 class="ConflictStats-name box-title">{{ localize "NGR.faith" }}</h4>
-          <div class="ConflictStats-mod flexrow">
-            <span class="ConflictStats-mod" title="Modifier">{{data.faith}}</span>
-          </div>
-      </div>
+  <section class="conflictMods-tab flexrow">
+    {{!-- conflictMods --}}
+    <div class="conflictMods-group">
+      <ul class="conflictMods flexrow">
+        {{#each data.conflictMods as |conflictMods id|}}
+          <li class="conflictMods" data-conflictMods="{{id}}">
+            <h4 class="conflictMods-name box-title">{{conflictMods.label}}</h4>
+            <div class="conflictMods-mod flexrow">
+              <span class="conflictMods-mod" title="Modifier">{{conflictMods.mod}}</span>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
     </div>
   </section>
   <section class="xp-tab flexrow">

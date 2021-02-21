@@ -18,16 +18,22 @@ export class ActorNGR extends Actor {
       pie.mod = x.mod;
     }
 
-    data.combat =
-      this.data.data.attributes.str.mod + this.data.data.classPie.war.mod;
-    data.presence =
-      this.data.data.attributes.cha.mod + this.data.data.classPie.bar.mod;
-    data.stealth =
-      this.data.data.attributes.agi.mod + this.data.data.classPie.rog.mod;
-    data.occult =
-      this.data.data.attributes.int.mod + this.data.data.classPie.wiz.mod;
-    data.faith =
-      this.data.data.attributes.wil.mod + this.data.data.classPie.pri.mod;
+    for (let [_, cMods] of Object.entries(data.conflictMods)) {
+      const x = this._getConflicMods(
+        cMods.name,
+        data.attributes.agi.mod,
+        data.attributes.per.mod,
+        data.attributes.int.mod,
+        data.attributes.wil.mod,
+        data.attributes.cha.mod,
+        data.classPie.war.mod,
+        data.classPie.rog.mod,
+        data.classPie.wiz.mod,
+        data.classPie.pri.mod,
+        data.classPie.bar.mod
+      );
+      cMods.mod = x.mod;
+    }
 
     return data;
   }
@@ -121,6 +127,35 @@ export class ActorNGR extends Actor {
           powers: undefined,
           allowLocked: undefined,
           mod: undefined,
+        };
+    }
+  }
+
+  _getConflicMods(conflict, agi, per, int, wil, cha, war, rog, wiz, pri, bar) {
+    switch (conflict) {
+      case "combat":
+        return {
+          mod: agi + war,
+        };
+      case "stealth":
+        return {
+          mod: per + rog,
+        };
+      case "occult":
+        return {
+          mod: int + wiz,
+        };
+      case "faith":
+        return {
+          mod: wil + pri,
+        };
+      case "presence":
+        return {
+          mod: cha + bar,
+        };
+      default:
+        return {
+          mod: 0,
         };
     }
   }

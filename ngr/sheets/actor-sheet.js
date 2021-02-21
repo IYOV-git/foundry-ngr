@@ -22,8 +22,12 @@ export class ActorSheetNGR extends ActorSheet {
       att.label = CONFIG.NGR.attributes[a];
     }
 
-    for (let [c, pie] of Object.entries(data.actor.data.classPie)) {
-      pie.label = CONFIG.NGR.classPie[c];
+    for (let [p, pie] of Object.entries(data.actor.data.classPie)) {
+      pie.label = CONFIG.NGR.classPie[p];
+    }
+
+    for (let [c, cMods] of Object.entries(data.actor.data.conflictMods)) {
+      cMods.label = CONFIG.NGR.conflictMods[c];
     }
 
     return data;

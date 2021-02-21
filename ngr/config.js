@@ -2,29 +2,27 @@ export const NGR = {};
 
 NGR.attributes = {
   str: "NGR.AttributeStr",
-  agi: "NGR.AttributeAgi",
   hth: "NGR.AttributeHth",
+  agi: "NGR.AttributeAgi",
   per: "NGR.AttributePer",
   int: "NGR.AttributeInt",
-  cha: "NGR.AttributeCha",
   wil: "NGR.AttributeWil",
-};
-
-NGR.attributeAbbreviations = {
-  str: "NGR.AttributeStrAbbr",
-  agi: "NGR.AttributeAgiAbbr",
-  hth: "NGR.AttributeHthAbbr",
-  per: "NGR.AttributePerAbbr",
-  int: "NGR.AttributeIntAbbr",
-  cha: "NGR.AttributeChaAbbr",
-  wil: "NGR.AttributeWilAbbr",
+  cha: "NGR.AttributeCha",
 };
 
 NGR.classPie = {
   war: "NGR.ClassPieWar",
-  bar: "NGR.ClassPieBar",
   rog: "NGR.ClassPieRog",
-  pri: "NGR.ClassPiePri",
   wiz: "NGR.ClassPieWiz",
+  pri: "NGR.ClassPiePri",
+  bar: "NGR.ClassPieBar",
   foo: "NGR.ClassPieFoo",
+};
+
+NGR.conflictMods = {
+  com: "NGR.conflictModsCom",
+  ste: "NGR.conflictModsSte",
+  occ: "NGR.conflictModsOcc",
+  fai: "NGR.conflictModsFai",
+  pre: "NGR.conflictModsPre",
 };
