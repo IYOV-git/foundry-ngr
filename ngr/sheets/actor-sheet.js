@@ -14,18 +14,7 @@ export class ActorSheetNGR extends ActorSheet {
   }
 
   getData() {
-    let isOwner = this.entity.owner;
-    const data = {
-      owner: isOwner,
-      options: this.options,
-      editable: this.isEditable,
-      cssClass: isOwner ? "editable" : "locked",
-      config: CONFIG.NGR,
-    };
-
-    data.actor = duplicate(this.actor.data);
-    data.data = data.actor.data;
-    data.labels = this.actor.labels || {};
+    const data = super.getData();
 
     for (let [a, att] of Object.entries(data.actor.data.attributes)) {
       att.label = CONFIG.NGR.attributes[a];
@@ -34,8 +23,13 @@ export class ActorSheetNGR extends ActorSheet {
       att.die = x.die;
     }
 
-    for (let [c, p] of Object.entries(data.actor.data.classPie)) {
-      p.label = CONFIG.NGR.classPie[c];
+    data.actor.data.level = this._getLevel(data.actor.data.xp);
+
+    for (let [c, pie] of Object.entries(data.actor.data.classPie)) {
+      pie.label = CONFIG.NGR.classPie[c];
+      const x = this._getPieModAndPow(pie.pieces, data.actor.data.level, 1);
+      pie.powers = x.powers;
+      pie.mod = x.mod;
     }
 
     return data;
@@ -80,6 +74,61 @@ export class ActorSheetNGR extends ActorSheet {
         return { mod: 7, die: "1d20" };
       default:
         return { mod: undefined, die: undefined };
+    }
+  }
+
+  _getLevel(xp) {
+    if (xp < 1000) return 0;
+    if (xp < 2000) return 1;
+    if (xp < 4000) return 2;
+    if (xp < 8000) return 3;
+    if (xp < 16000) return 4;
+    if (xp < 32000) return 5;
+    if (xp < 64000) return 6;
+    if (xp < 125000) return 7;
+    if (xp < 250000) return 8;
+    if (xp < 500000) return 9;
+    return 10;
+  }
+
+  _getPieModAndPow(pieces, level, milestones) {
+    switch (pieces) {
+      case 0:
+        return {
+          powers: 0,
+          allowLocked: false,
+          mod: Math.floor(level * (1 / 3)),
+        };
+      case 1:
+        return {
+          powers: 1,
+          allowLocked: false,
+          mod: Math.floor(level * (2 / 3)),
+        };
+      case 2:
+        return {
+          powers: 3,
+          allowLocked: false,
+          mod: level,
+        };
+      case 3:
+        return {
+          powers: 6,
+          allowLocked: false,
+          mod: level + milestones,
+        };
+      case 4:
+        return {
+          powers: 7,
+          allowLocked: true,
+          mod: level + milestones,
+        };
+      default:
+        return {
+          powers: undefined,
+          allowLocked: undefined,
+          mod: undefined,
+        };
     }
   }
 }

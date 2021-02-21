@@ -20,5 +20,7 @@
   "NGR.ClassPieRog": "Rogue",
   "NGR.ClassPiePri": "Priest",
   "NGR.ClassPieWiz": "Wizard",
-  "NGR.ClassPieFoo": "Fool"
+  "NGR.ClassPieFoo": "Fool",
+
+  "NGR.xp": "XP"
 }

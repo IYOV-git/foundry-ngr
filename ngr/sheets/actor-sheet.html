@@ -25,12 +25,24 @@
             <h4 class="classpie-name box-title">{{classPie.label}}</h4>
             <input class="classpie-piece" name="data.classPie.{{id}}.pieces" type="number" value="{{classPie.pieces}}" placeholder="NaN"/>
             <div class="classpie-powers flexrow">
-              <span class="classpie-mod" title="Modifier">{{classPie.mod}}</span>
               <span class="classpie-power" title="Powers">{{classPie.powers}}</span>
+              <span class="classpie-mod" title="Modifier">{{classPie.mod}}</span>
             </div>
           </li>
         {{/each}}
       </ul>
+    </div>
+  </section>
+  <section class="xp-tab flexrow">
+    {{!-- xp --}}
+    <div class="xp-group flexrow">
+      <div class="xp">
+        <h4 class="xp-name box-title">{{ localize "NGR.xp" }}</h4>
+        <input class="xp" name="data.xp" type="number" value="{{data.xp}}" placeholder="NaN"/>
+        <div class="xp-level flexrow">
+          <span class="xp-level" title="Level">{{data.level}}</span>
+        </div>
+      </div>
     </div>
   </section>
 </form>

@@ -6,77 +6,49 @@
       "templates": [],
       "attributes": {
         "str": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "agi": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "hth": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "per": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "int": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "cha": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         },
         "wil": {
-          "score": 10,
-          "mod": 0,
-          "die": "1d6"
+          "score": 10
         }
       },
 
       "classPie": {
         "war": {
-          "pieces": 0,
-          "mod": 0,
-          "powers": 0
+          "pieces": 0
         },
         "bar": {
-          "pieces": 0,
-          "mod": 0,
-          "powers": 0
+          "pieces": 0
         },
         "rog": {
-          "pieces": 0,
-          "mod": 0,
-          "powers": 0
+          "pieces": 0
         },
         "pri": {
-          "pieces": 0,
-          "mod": 0,
-          "powers": 0
+          "pieces": 0
         },
         "wiz": {
-          "pieces": 0,
-          "mod": 0,
-          "powers": 0
+          "pieces": 0
         },
         "foo": {
-          "pieces": 3,
-          "mod": 6,
-          "powers": 0
+          "pieces": 3
         }
       },
-      "xp": 0,
-      "level": 0,
-      "luckDie": "1d6"
+      "xp": 0
     }
   },
   "Item": {
