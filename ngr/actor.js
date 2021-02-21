@@ -18,6 +18,17 @@ export class ActorNGR extends Actor {
       pie.mod = x.mod;
     }
 
+    data.combat =
+      this.data.data.attributes.str.mod + this.data.data.classPie.war.mod;
+    data.presence =
+      this.data.data.attributes.cha.mod + this.data.data.classPie.bar.mod;
+    data.stealth =
+      this.data.data.attributes.agi.mod + this.data.data.classPie.rog.mod;
+    data.occult =
+      this.data.data.attributes.int.mod + this.data.data.classPie.wiz.mod;
+    data.faith =
+      this.data.data.attributes.wil.mod + this.data.data.classPie.pri.mod;
+
     return data;
   }
 

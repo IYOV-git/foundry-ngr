@@ -22,5 +22,11 @@
   "NGR.ClassPieWiz": "Wizard",
   "NGR.ClassPieFoo": "Fool",
 
+  "NGR.combat": "Combat",
+  "NGR.presence": "Presence",
+  "NGR.stealth": "Stealth",
+  "NGR.occult": "Occult",
+  "NGR.faith": "Faith",
+
   "NGR.xp": "XP"
 }
