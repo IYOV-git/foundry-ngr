@@ -18,10 +18,10 @@ Hooks.once("init", async function () {
 
 Hooks.once("setup", function () {
   // Localize CONFIG objects once up-front
-  const toLocalize = ["attributes", "classPie", "conflictMods"];
+  const toLocalize = ["attributes", "classPie", "conflictMods", "resources"];
 
   // Exclude some from sorting where the default order matters
-  const noSort = ["attributes", "classPie", "conflictMods"];
+  const noSort = ["attributes", "classPie", "conflictMods", "resources"];
 
   // Localize and sort CONFIG objects
   for (let o of toLocalize) {

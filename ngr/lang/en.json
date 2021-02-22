@@ -20,5 +20,11 @@
   "NGR.conflictModsFai": "Faith",
   "NGR.conflictModsPre": "Presence",
 
+  "NGR.resourcesLuc": "Luck",
+  "NGR.resourcesMan": "Mana",
+  "NGR.resourcesPie": "Piety",
+  "NGR.resourcesFat": "Fate",
+  "NGR.resourcesDes": "Destiny",
+
   "NGR.xp": "XP"
 }

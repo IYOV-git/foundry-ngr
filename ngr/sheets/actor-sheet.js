@@ -30,6 +30,10 @@ export class ActorSheetNGR extends ActorSheet {
       cMods.label = CONFIG.NGR.conflictMods[c];
     }
 
+    for (let [r, res] of Object.entries(data.actor.data.resources)) {
+      res.label = CONFIG.NGR.resources[r];
+    }
+
     return data;
   }
 

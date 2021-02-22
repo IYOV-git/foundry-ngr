@@ -26,3 +26,11 @@ NGR.conflictMods = {
   fai: "NGR.conflictModsFai",
   pre: "NGR.conflictModsPre",
 };
+
+NGR.resources = {
+  luc: "NGR.resourcesLuc",
+  man: "NGR.resourcesMan",
+  pie: "NGR.resourcesPie",
+  fat: "NGR.resourcesFat",
+  des: "NGR.resourcesDes",
+};

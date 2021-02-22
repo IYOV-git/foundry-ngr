@@ -48,6 +48,19 @@
       </ul>
     </div>
   </section>
+  <section class="resources-tab flexrow">
+    {{!-- resources --}}
+    <div class="resources-group">
+      <ul class="resources flexrow">
+        {{#each data.resources as |resources id|}}
+          <li class="resources" data-resources="{{id}}">
+            <h4 class="resources-name box-title">{{resources.label}}</h4>
+            <input class="resources-points" name="data.resources.{{id}}.points" type="number" value="{{resources.points}}" placeholder="NaN"/>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
   <section class="xp-tab flexrow">
     {{!-- xp --}}
     <div class="xp-group flexrow">

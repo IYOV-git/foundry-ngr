@@ -68,25 +68,20 @@
       },
 
       "resources": {
-        "luck": {
-          "points": null,
-          "max": null
+        "luc": {
+          "points": null
         },
-        "mana": {
-          "points": null,
-          "max": null
+        "man": {
+          "points": null
         },
-        "piety": {
-          "points": null,
-          "max": null
+        "pie": {
+          "points": null
         },
-        "fate": {
-          "points": null,
-          "max": null
+        "fat": {
+          "points": null
         },
-        "destiny": {
-          "points": null,
-          "max": null
+        "des": {
+          "points": null
         }
       },
 
