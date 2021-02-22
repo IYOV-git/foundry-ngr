@@ -6,46 +6,46 @@
       "templates": [],
       "attributes": {
         "str": {
-          "score": 10
+          "score": null
         },
         "hth": {
-          "score": 10
+          "score": null
         },
         "agi": {
-          "score": 10
+          "score": null
         },
         "per": {
-          "score": 10
+          "score": null
         },
         "int": {
-          "score": 10
+          "score": null
         },
         "wil": {
-          "score": 10
+          "score": null
         },
         "cha": {
-          "score": 10
+          "score": null
         }
       },
 
       "classPie": {
         "war": {
-          "pieces": 0
+          "pieces": null
         },
         "rog": {
-          "pieces": 0
+          "pieces": null
         },
         "wiz": {
-          "pieces": 0
+          "pieces": null
         },
         "pri": {
-          "pieces": 0
+          "pieces": null
         },
         "bar": {
-          "pieces": 0
+          "pieces": null
         },
         "foo": {
-          "pieces": 3
+          "pieces": null
         }
       },
 
@@ -67,10 +67,41 @@
         }
       },
 
+      "resources": {
+        "luck": {
+          "points": null,
+          "max": null
+        },
+        "mana": {
+          "points": null,
+          "max": null
+        },
+        "piety": {
+          "points": null,
+          "max": null
+        },
+        "fate": {
+          "points": null,
+          "max": null
+        },
+        "destiny": {
+          "points": null,
+          "max": null
+        }
+      },
+
       "xp": 0,
-      "status": "calm"
+      "status": "calm",
+      "milestones": null,
+      "luckyNumbers": {
+        "first": null,
+        "second": null,
+        "third": null,
+        "fourth": null
+      }
     }
   },
+
   "Item": {
     "types": []
   }
